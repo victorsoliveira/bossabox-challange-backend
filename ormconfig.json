@@ -1,0 +1,21 @@
+{
+    "type": "sqlite",
+    "database": "vuttr.sqlite",
+    "synchronize": true,
+    "logging": true,
+    "migrationsTableName": "migrations",
+    "entities": [
+        "src/entities/**/*.ts"
+    ],
+    "migrations": [
+        "src/migrations/**/*.ts"
+    ],
+    "subscribers": [
+        "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src/entities",
+        "migrationsDir": "src/migrations",
+        "subscribersDir": "src/subscriber"
+    }
+}
